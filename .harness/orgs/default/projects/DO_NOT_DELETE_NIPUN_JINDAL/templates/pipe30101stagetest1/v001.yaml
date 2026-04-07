@@ -1,0 +1,27 @@
+template:
+  name: pipe-30101-stage-test-1
+  identifier: pipe30101stagetest1
+  versionLabel: v001
+  type: Stage
+  projectIdentifier: DO_NOT_DELETE_NIPUN_JINDAL
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "step 1"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
