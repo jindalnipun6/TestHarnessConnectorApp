@@ -13,7 +13,7 @@ template:
         steps:
           - step:
               type: ShellScript
-              name: ShellScript_1
+              name: ShellScript_1_temp_1
               identifier: ShellScript_1
               spec:
                 shell: Bash
