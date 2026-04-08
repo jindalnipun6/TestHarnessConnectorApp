@@ -1,0 +1,41 @@
+template:
+  name: pipe-30101_template_app_stage_1
+  identifier: pipe30101_template_app_stage_1
+  versionLabel: v002
+  type: Stage
+  projectIdentifier: nipunpipelines
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "Version 2 step 1"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
+          - step:
+              type: ShellScript
+              name: ShellScript_2
+              identifier: ShellScript_2
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "Version 2 Step 2"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
